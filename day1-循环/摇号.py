@@ -10,7 +10,7 @@ while count<3:
         sum2="".join(random.sample(s,5))
         car_num=f"京{sum1}.{sum2}"
         car_nums.append(car_num)
-        print(i+1,car_num)
+        print(i+1,car_num) #加编号
     u_input=input("请输入你喜欢的车牌号：").strip()
     if u_input in car_nums:
         print(f"恭喜您选择了【{u_input}】车牌号")
