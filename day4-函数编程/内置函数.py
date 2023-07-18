@@ -53,3 +53,15 @@ x = ["aaa", "bbb", "ccc"]
 y = [1, 2, 3, 4]
 for i in zip(x, y):
     print(i)
+# filter 把列表每个元素给函数运行，结果为真保留这个值
+l = [1, 2, 3, 5, 6, 7, 9, 8]
+print(l)
+
+
+def num(x):
+    if x > 5:
+        return x
+
+
+for i in filter(num, l):
+    print(i)
