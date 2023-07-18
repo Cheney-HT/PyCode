@@ -7,4 +7,5 @@ File    : Test.py
 Project : PycharmCode
 """
 import sys
-print(sys.getdefaultencoding())
+print(sys.getdefaultencoding()) #查看系统编码方式
+print(sys.argv) #将参数传入argv
