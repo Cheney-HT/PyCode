@@ -6,7 +6,7 @@ AuThor  : Administrator
 File    : 文件遍历.py
 Project : PycharmCode
 """
-f=open("联系方式",encoding="utf-8")
+f=open("联系方式.txt", encoding="utf-8")
 for line in f:
     line=line.split() #切片
     height=int(line[3])

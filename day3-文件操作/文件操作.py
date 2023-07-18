@@ -6,7 +6,7 @@ AuThor  : Administrator
 File    : 文件操作.py
 Project : PycharmCode
 """
-f=open("seek","w")
+f=open("seek.txt", "w")
 f.write("Hello1\n")
 print("返回光标当前位置：",f.tell())
 f.write("Hello2\n")

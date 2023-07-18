@@ -6,7 +6,7 @@ Time    : 2023/7/18 10:26
 File    : 文件修改.py
 Project : PycharmCode
 """
-f=open("联系方式","r+",encoding="utf-8")
+f=open("联系方式.txt", "r+", encoding="utf-8")
 #1. 将文件加载到内存
 data=f.read()
 new_data=data.replace("岳妮妮","倪妮")
