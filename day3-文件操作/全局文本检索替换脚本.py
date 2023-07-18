@@ -7,15 +7,16 @@ File    : 全局文本检索替换脚本.py
 Project : PycharmCode
 """
 import sys
-old_str=sys.argv[1]
-new_str=sys.argv[2]
-filename=sys.argv[3]
-f=open(filename,"r+",encoding="utf-8")
+
+old_str = sys.argv[1]
+new_str = sys.argv[2]
+filename = sys.argv[3]
+f = open(filename, "r+", encoding="utf-8")
 # read to RAM
-data=f.read()
+data = f.read()
 # count and replayce
-old_str_count=data.count(old_str)
-new_data=data.replace(old_str,new_str)
+old_str_count = data.count(old_str)
+new_data = data.replace(old_str, new_str)
 # clear
 f.seek(0)
 f.truncate()
