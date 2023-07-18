@@ -6,6 +6,11 @@ AuThor  : Administrator
 File    : 文本模式.py
 Project : PycharmCode
 """
+"""
+r 只读模式
+w 创建模式 若文件存在则覆盖
+a 追加模式，在文本末尾最佳数据
+"""
 f=open("aa","w",encoding="utf-8")
 f.write("123\n")
 f.write("胡歌\n")
