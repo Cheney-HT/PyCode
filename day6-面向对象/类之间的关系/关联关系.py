@@ -26,6 +26,10 @@ class Relationship:
         else:
             print("Single Dog...")
 
+    def break_rel(self):
+        print(f"{self.couple[0].name}和{self.couple[1].name}正式分手了")
+        self.couple.clear()  # 分手
+
 
 class Person:
     def __init__(self, name, age, sex, relation):
@@ -48,7 +52,8 @@ relation.do_couple(p1, p2)
 print(p1.relation.couple)
 print(p1.relation.get_my_partner(p1).name)
 
-
+p1.relation.break_rel()
+p2.relation.get_my_partner(p2)
 # p1.partner = p2  # 绑定
 # print(p1.partner.name, p2.partner)
 # p2.partner = p1  # 双向关联
