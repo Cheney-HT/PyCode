@@ -18,3 +18,9 @@ print(bool([]))  # False
 print(bool([0]))  # True
 
 # 在python中，只要表示空的东西，都是False；只有有东西就是True
+
+a = [123456]
+if a:
+    print(a[0])
+else:
+    print("Bye")
