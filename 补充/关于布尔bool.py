@@ -15,5 +15,6 @@ print(bool(-1))  # True
 print(bool(""))  # False
 print(bool(None))  # False
 print(bool([]))  # False
+print(bool([0]))  # True
 
 # 在python中，只要表示空的东西，都是False；只有有东西就是True
