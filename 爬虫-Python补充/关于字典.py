@@ -3,7 +3,7 @@
 """
 编码     : encoding="utf-8"
 Time    : 2023/8/16 17:47
-File    : 关于字典、.py
+File    : 关于字典.py
 Project : PycharmCode
 """
 dir = {
@@ -50,3 +50,8 @@ print(zry["children"][1]["age"])
 # 打印zry的每个孩子的姓名
 for i in zry["children"]:
     print(i["name"])
+
+v1 = zry["马化腾"]  # 没有key直接报错
+print(v1)
+v2 = zry.get("马化腾")  # 没有key返回null,若有第二个参数，返回第二个参数
+print(v2)
