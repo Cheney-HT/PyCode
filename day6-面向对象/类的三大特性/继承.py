@@ -8,7 +8,7 @@ Project : PycharmCode
 
 
 # 父类
-class Animal:
+class Animal(object):
     def __init__(self, name, age, sex):
         self.name = name
         self.age = age
